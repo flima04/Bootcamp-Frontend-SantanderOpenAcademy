@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-weight: 400;
+    text-decoration: none;
+    color: #515151;
+}
+
+body {
+    font-size: 0.9rem;
+    background-color: rgb(245, 245, 245);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    padding: 10px 20px;
+}
+
+#left-menu, #search-bar, #right-menu {
+    display: flex;
+    align-items: center;
+}
+
+#left-menu, #right-menu {
+    gap: 20px;
+}
+
+#search-bar input {
+    width: 348px;
+    height: 40px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #CCCCCC;
+    margin: 0px;
+    padding: 5px;
+}
+
+#search-bar input:focus {
+    border: 2px solid #5596cc;
+    outline: none;
+}
+
+#search-bar button {
+    padding:0px 20px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    border-left: 0;
+}
+
+#content {
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+main {
+    min-width: 50vw;
+    margin-left: 15px;
+}
+
+iframe {
+    width: 100%;
+    min-height: calc(0.5625*50vw);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.253);
+}
+
+h1 {
+    font: 600 1.5rem Roboto;
+    color: black;
+    padding-top: 15px;
+}
+
+#video-actions {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    justify-content: space-between;
+}
+
+#channel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#subscribe {
+    background-color: #CC0000;
+    color: white;
+    width: 160px;
+    height: 40px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+.interactions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: black;
+}
+
+h2 {
+    font: 600 0.9rem Roboto;
+    color: black;
+}
+
+#video-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 510px;
+}
+
+aside {
+    max-width: 380px;
+    margin-left: 25px;
+}
+
+aside a {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
+aside a img {
+    border-radius: 8px;
+    max-width: max-content;
+    max-height: max-content;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    font-size: 0.7rem;
+    margin-top: 6px;
+}

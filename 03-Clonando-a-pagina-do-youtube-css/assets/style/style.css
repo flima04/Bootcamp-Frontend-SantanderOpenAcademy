@@ -87,6 +87,7 @@ iframe {
     min-height: calc(0.5625*50vw);
     border-radius: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.253);
+    overflow: hidden;
 }
 
 h1 {

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabrício Lima | Portfolio</title>
+  <meta name="description" content="Portfólio do desenvolvedor front-end Fabrício Lima para compartilhar projetos e habilidades desenvolvidas.">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
+  </header>
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
+          <span class="menu__text">Contato</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>UI/UX Design &</b> Desenvolvimento Front-end</h1>
+      <p>Fabrício Lima, Maceió-AL, Designer e Desenvolvedor Front-end.</p> 
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/flima04" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/-fabricio-lima/" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>  
+      </a>
+    </div>
+    <div class="main__content2">
+      <img src="assets/images/profile-pic-banner.jpg" alt="banner imagem de perfil">
+    </div>
+  </main>
+
+  <section class="technologies">
+    <h2>Conhecimento nas principais tecnologias</h2>
+    <ul class="technologies__list">
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/HTML5-badge.png" alt="Logo HTML">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/CSS3-badge.png" alt="Logo CSS">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/JS-badge.png" alt="Logo JavaScript">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/React-badge.png" alt="Logo React">
+      </li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="projects__container">
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/maya-brandao-mentoria-financas.jpg" alt="Capa Landing page mentoria de finanças">
+        <div class="card__body">
+          <h3 class="card__title">Landing page mentoria de finanças</h3>
+          <ul class="card__list">
+            <li class="card__item">Efeito paralax com gradientes;</li>
+            <li class="card__item">Integração com Whatsapp;</li>
+            <li class="card__item">Chat agent.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/HTML5-badge.png" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/CSS3-badge.png" alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/JS-badge.png" alt="Logo JavaScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/React-badge.png" alt="Logo React">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://flima04.github.io/Landing-Page-para-uma-mentoria-de-financas/" target="_blank">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>  
+            <a href="https://github.com/flima04/Landing-Page-para-uma-mentoria-de-financas" target="_blank">
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img class="card__cover" src="assets/images/projects/lista-de-compras.jpg" alt="Capa lista de compras">
+        <div class="card__body">
+          <h3 class="card__title">Lista de Compras</h3>
+          <ul class="card__list">
+            <li class="card__item">Adição, conclusão, edição e exclusão de itens;</li>
+            <li class="card__item">Filtragem por categorias.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/HTML5-badge.png" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/CSS3-badge.png" alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/JS-badge.png" alt="Logo JavaScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/React-badge.png" alt="Logo React">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://flima04.github.io/Lista-de-Compras/" target="_blank">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>  
+            <a href="https://github.com/flima04/Lista-de-Compras" target="_blank">
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/dog-breeds-quiz.jpg" alt="Capa dog breeds quiz">
+        <div class="card__body">
+          <h3 class="card__title">Dog breed quiz</h3>
+          <p class="card__description">Mini game sobre raças de cachorros.</p>
+          <ul class="card__list">
+            <li class="card__item">Consumo de API aberta;</li>
+            <li class="card__item">Carregamento de quiz e alternativas de forma dinâmica.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/HTML5-badge.png" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/CSS3-badge.png" alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/JS-badge.png" alt="Logo JavaScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/React-badge.png" alt="Logo React">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://flima04.github.io/Quiz-Dog-Breeds/" target="_blank">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a> 
+            <a href="https://github.com/flima04/Quiz-Dog-Breeds" target="_blank">
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </a>  
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/flima04">
+        <button class="btn btn--primary">
+          <span>Ver Todos os Projetos</span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>  
+      </a>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img class="about__photo" src="assets/images/profile-pic.jpg" alt="">
+      <div class="about__description">
+        <h2>Sobre mim</h2>
+        <p>Fabrício Lima. Por bastante tempo atuei como motion designer e filmmaker e estou trilhando uma transição de carreira para ser um desenvolvedor. Meus intereses incluem front e back-end, análise de dados e IA.
+        </p>  
+        <div class="about__icons">
+          <i class="bi bi-translate"></i>
+          <span>Inglês: Fluente | Espanhol: Intermediário</span>
+        </div>
+        <div class="description__buttons">
+          <a href="https://www.linkedin.com/in/-fabricio-lima/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Conecte-se Comigo</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button> 
+          </a>
+          <a href="">
+            <button class="btn">
+              <span>Currículo</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Formação</h3>
+          <h4>Análise e Desenvolvimento de Sistemas</h4>
+          <span>Jan 2022 - Jun 2024</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>Universidade Estácio de Sá</span>
+          </div>
+          <div class="about__icons">
+            <i class="bi bi-mortarboard"></i>
+            <span>Graduação Tecnológica</span>
+          </div>
+        </div>
+        <div class="row2">
+          <h3>Experiências</h3>
+          <h4>Dev Freelancer</h4>
+          <span>Fev 2025 - Atualmente</span>
+          <span>Criação de landing pages e automatização de atendimentos através de chat agents.
+          </span>
+          <ul class="about__list">
+            <li class="about__item">UI/UX Design;</li>
+            <li class="about__item">Desenvolvimento web;</li>
+            <li class="about__item">Deploiment.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col2">
+        <h3>Cursos</h3>
+        <div id="accordion">
+          <div class="accordion__item active">
+            <button class="accordion__header start">
+              <span>JavaScript na Prática</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                OxeTech. Maio 2025. 40h.
+              </p>
+              <p>
+                Aprendizado na prática a criar interações, validar formulários, manipular elementos da página, trabalhar com eventos, funções, arrays, objetos e muito mais. Do básico ao avançado para dominar o front-end e transformar ideias em sites dinâmicos. 
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Inteligência Artificial</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Oxetech. Agosto 2025. 40h.
+              </p>
+              <p>
+                Explore o fascinante mundo da Inteligência Artificial (IA) e aprenda a desenvolver soluções inteligentes com Python. Este curso combina teoria e prática, cobrindo desde os fundamentos até técnicas modernas de Machine Learning, Deep Learning e Processamento de Linguagem Natural (NLP).
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Análise de Dados com Python</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                OxeTech. Agosto 2025. 40h.
+              </p>
+              <p>
+                Técnicas essenciais de análise de dados, aprendendo a extrair insights valiosos para tomada de decisões. Desde a limpeza e manipulação de dados até visualizações impactantes e análises estatísticas, tudo com ferramentas profissionais como Python e Pandas.
+              </p>
+            </div>
+          </div>
+        </div>
+  </section>
+  
+  <section id="contato" class="contact">
+    <h2>Contate-me</h2>
+    <p>Estou disponível para serviços e novas conexões. Contate-me via 
+      e-mail e conecte-se comigo através das minhas redes sociais.
+    </p>
+    <ul class="menu menu--social">
+      <li>
+        <a class="menu__link" href="https://github.com/flima04" target="_blank">
+          <i class="menu__icon bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.linkedin.com/in/-fabricio-lima/" target="_blank">
+          <i class="menu__icon bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+    </ul>
+    <a href="mailto:fabricio_lima@outlook.com">
+      <button class="btn btn--primary">
+        <span class="email">fabricio_lima@outlook.com</span>
+      </button>  
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      © 2025. Fabrício Lima.
+    </p>
+  </footer>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

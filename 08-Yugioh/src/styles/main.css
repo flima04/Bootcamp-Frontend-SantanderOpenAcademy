@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg-video {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-video .video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.bg-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container__left {
+  width: 35%;
+  min-width: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.container__right {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.score_box {
+  background-color: #fff;
+  padding: 1rem;
+  width: auto;
+  text-align: center;
+  max-width: 300px;
+}
+
+.frame {
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+
+.card-details {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 6rem;
+  width: auto;
+  text-align: center;
+  max-width: 300px;
+}
+
+#card-name {
+  font-size: 0.8rem;
+}
+
+#card-type {
+  font-size: 1rem;
+}
+
+.card-box__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.3rem;
+  width: 100%;
+}
+
+.card-versus {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.1rem;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.versus-top,
+.versus-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.versus-bottom {
+  margin-top: 1rem;
+}
+
+#next-duel {
+  display: none;
+  padding: 1rem;
+  font-size: unset;
+}
+
+.card-box {
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  gap: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-infield {
+  height: 11.2rem;
+  width: 8rem;
+  border-radius: 5px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+  .card-infield {
+    height: 10rem;
+    width: 7.2rem;
+  }
+  .container__left,
+  .container__right {
+    padding: 0.8rem;
+  }
+  .score_box,
+  .card-details {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  .container__left {
+    width: 100%;
+    min-width: unset;
+    padding-bottom: 1rem;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .container__right {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .score_box {
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+  .card-details {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 1rem;
+  }
+  #card-name {
+    font-size: 0.9rem;
+  }
+  #card-type {
+    font-size: 1.1rem;
+  }
+  .card-box__container {
+    height: auto;
+    padding: 0.5rem;
+  }
+  .card-versus {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .versus-top,
+  .versus-bottom {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+  .versus-bottom {
+    margin-top: 0.8rem;
+  }
+  #next-duel {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+  }
+  .card-box {
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  .card-infield {
+    height: 9rem;
+    width: 6.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+  }
+  .score_box,
+  .card-details {
+    width: 95%;
+    max-width: 280px;
+    padding: 0.8rem;
+  }
+  #card-name {
+    font-size: 0.85rem;
+  }
+  #card-type {
+    font-size: 1rem;
+  }
+  .card-infield {
+    height: 8.5rem;
+    width: 6rem;
+  }
+  .card-box {
+    gap: 0.8rem;
+    padding: 0.3rem;
+  }
+  .versus-top img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-infield {
+    height: 7.5rem;
+    width: 5.5rem;
+  }
+  .score_box,
+  .card-details {
+    width: 98%;
+    max-width: 260px;
+    padding: 0.6rem;
+  }
+  #card-name {
+    font-size: 0.8rem;
+  }
+  #card-type {
+    font-size: 0.95rem;
+  }
+  .card-box {
+    gap: 0.5rem;
+    padding: 0.2rem;
+  }
+  .versus-top img {
+    height: 70px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-infield {
+    height: 6.5rem;
+    width: 4.8rem;
+  }
+  .score_box,
+  .card-details {
+    width: 100%;
+    max-width: 220px;
+    padding: 0.5rem;
+  }
+  #card-name,
+  #card-type {
+    font-size: 0.75rem;
+  }
+  .card-box {
+    gap: 0.3rem;
+    padding: 0.1rem;
+  }
+  .versus-top img {
+    height: 60px;
+  }
+}

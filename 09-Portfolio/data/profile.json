@@ -1,0 +1,82 @@
+{
+  "name": "Fabrício Lima",
+  "photo": "https://avatars.githubusercontent.com/u/112064779?v=4",
+  "job": "Software Developer",
+  "location": "Maceió - AL",
+  "phone": "(82) 99411-8644",
+  "email": "fabricio.lima@gmail.com",
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "HTML",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/html.png"
+      },
+      {
+        "name": "CSS",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/css.png"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/javascript.png"
+      },
+      {
+        "name": "Python",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/python.png"
+      },
+      {
+        "name": "React",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+      },
+      {
+        "name": "Github",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/github.png"
+      }
+    ],
+    "softSkills": [
+      "Empatia",
+      "Proatividade",
+      "Aprendizado Ágil",
+      "Flexibilidade",
+      "Organização"
+    ]
+  },
+  "languages": [
+    "Português BR",
+    "Inglês (Fluente)",
+    "Espanhol (intermediário)"
+  ],
+  "portfolio": [
+    {
+      "name": "Landing page mentoria de finanças",
+      "url": "https://flima04.github.io/Landing-Page-para-uma-mentoria-de-financas/",
+      "github": true
+    },
+    {
+      "name": "Lista de Compras",
+      "url": "https://flima04.github.io/Lista-de-Compras/",
+      "github": true
+    },
+    {
+      "name": "Dog breed quiz",
+      "url": "https://flima04.github.io/Quiz-Dog-Breeds//",
+      "github": true
+    }
+  ],
+  "professionalExperience": [
+    {
+      "name": "Dev Freelancer",
+      "period": "2025 - até o momento",
+      "description": "Criação de landing pages e automatização de atendimentos através de chat agents."
+    },
+    {
+      "name": "The Lagoon Films",
+      "period": "2016 - 2025",
+      "description": "Produção e edição de vídeos para meios diversos."
+    },
+    {
+      "name": "Escola Espaço Educar", 
+      "period": "2017 - 2019",
+      "description": "Planejamento e desenvolvimento de campanhas e vídeos promocionais, designs para social media, produção e edição de vídeos e videoaulas, motion graphics."
+    }
+  ]
+}
